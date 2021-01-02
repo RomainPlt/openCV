@@ -48,8 +48,8 @@ def stackImages(scale,imgArray):
 
 
 faceCascade = cv2.CascadeClassifier("cascades/haarcascade_frontalface_default.xml")
-img = cv2.imread("nini.JPG")
-imgResize = cv2.resize(img,(400,300))
+img = cv2.imread("random.jpeg")
+imgResize = cv2.resize(img,(300,300))
 imgGray = cv2.cvtColor(imgResize, cv2.COLOR_BGR2GRAY)
 
 
@@ -62,6 +62,7 @@ for (x,y,w,h) in faces:
     
 cv2.imshow("face",  imgResize)
 cv2.waitKey(0)
+
 
 """
 ################################## Color Detection
@@ -105,9 +106,8 @@ while True:
     cv2.imshow("stacked Images", imgStack)
     
     cv2.waitKey(1)
-
-"""
     
+"""   
     
 """
 ################################## Redressage d'image
